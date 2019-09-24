@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');    /* imports the poppins font */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;                        /* all numbers Poppins with default of sans-serif*/
+    font-weight: normal;                                       /* set font boldness to normal */
+    margin: 0;                                                 /* zero-out margin otherwise there will be a white margin on the sides of the window. */
+    padding: 0;                                                /* zero-out padding otherwise there will be a white margin on the sides of the window. */
+}
