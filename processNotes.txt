@@ -1,2 +1,24 @@
 Responsive Burger Navigation Process Notes
 ==========================================
+
+STEP 1: Create a burger icon in html
+====================================
+    To do this, all you need to do is create a "hamberger div" with 3 "line" divs.
+    This will be invisible at larger media sizes.
+    Also remember that this is INSIDE the nav element.
+    -----------------------------------------------
+    <nav>
+        <div class="hamberger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+    -----------------------------------------------
+
+STEP 2: Then add the links that you want for your navigation with an unordered list of list items.
+=================================================================================================
+
+----------------------------------------------
+
+----------------------------------------------
