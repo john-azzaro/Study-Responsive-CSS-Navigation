@@ -20,5 +20,16 @@ STEP 2: Then add the links that you want for your navigation with an unordered l
 =================================================================================================
 
 ----------------------------------------------
-
+    <nav>
+        <div class="hamberger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">                      <== links
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 ----------------------------------------------
