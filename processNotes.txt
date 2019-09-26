@@ -132,4 +132,12 @@ Also, because compatibility with the clip-path property might be lacking, add a 
 -webkit-clip-path: circle(100px at 90% -10%);
 --------------------------------
 
+Then, add a transition
+-----------------------------------
+transition: all 1s ease-out;
+-----------------------------------
+
+
+STEP 8: Create classes for JS for open and close animations
+===========================================================
 

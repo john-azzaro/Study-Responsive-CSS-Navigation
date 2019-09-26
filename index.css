@@ -74,6 +74,7 @@ nav {
 
         clip-path: circle(100px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
         -webkit-clip-path: circle(100px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
+        transition: all 1s ease-out;                           /* animation effect */
     }
 
 
