@@ -49,8 +49,9 @@ nav {
     .line {                                      /* for the lines that make the hamburger icon...*/
         width: 30px;
         height: 3px;
-        background: white;
+        background: rgb(252, 252, 252);
         margin: 5px;
+        border-radius: 1px
     }
 
     nav {
@@ -79,6 +80,8 @@ nav {
         transition: all 1s ease-out;                           /* animation effect */
     }
 
+
+    /* on click of the burger icon*/
     .nav-links.open {
         clip-path: circle(1200px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
         -webkit-clip-path: circle(1200px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
@@ -86,7 +89,6 @@ nav {
     }
 
     /* For link animation on click*/
-
     .nav-links li {
         opacity: 0;
     }
