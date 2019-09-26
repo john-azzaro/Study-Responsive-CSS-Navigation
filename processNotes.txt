@@ -148,3 +148,43 @@ STEP 8: Create classes for JS for open and close animations
 -----------------------------------------------------
  
 
+STEP 9: JS for burger
+======================
+-----------------------------------------------------------------------------
+"use strict";
+
+const hamburger = document.querySelector('.hamburger');         // selects hamburger icon.
+const navLinks = document.querySelector('.nav-links');          // selects nav-links element
+const links = document.querySelectorAll(".nav-links li");       // selects all the li's in nav-links
+
+hamburger.addEventListener("click", (event) => {                 // on click of the hamburger icon...
+    navLinks.classList.toggle('open');                           // toggle the "open" style
+});
+
+-----------------------------------------------------------------------------
+
+
+
+STEP 10: JS for link animation
+==============================
+-----------------------------------------------------------------------------
+hamburger.addEventListener("click", (event) => {                 // on click of the hamburger icon...
+    navLinks.classList.toggle('open');                           // toggle the "open" style
+    links.forEach(link => {
+        link.classList.toggle('fade');
+    });
+});
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+resources:
+==========
+https://bennettfeely.com/clippy/  -- good generator for shapes of menu

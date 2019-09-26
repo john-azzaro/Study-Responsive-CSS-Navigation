@@ -63,6 +63,7 @@ nav {
         right: 5%;                             /* and positioned 5% from the right of the window */
         top: 50%;                              /* to center burger icon, set 50% (i.e. mid) */   
         transform: translate(-5%, -50%);       /* and transform translate with offset*/
+        z-index: 1;
     }
 
     .nav-links {
@@ -71,6 +72,7 @@ nav {
         height: 100vh;                          /* height is 100% if the viewport */
         width: 100%;                            /* width is 100% of the viewport */
         flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
+        pointer-events: none;                    /* fo clickability */
 
         clip-path: circle(100px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
         -webkit-clip-path: circle(100px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
@@ -78,8 +80,30 @@ nav {
     }
 
     .nav-links.open {
-        clip-path: circle(1000px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
-        -webkit-clip-path: circle(1000px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
+        clip-path: circle(1200px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
+        -webkit-clip-path: circle(1200px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
+        pointer-events: all;                                /* for clickability */
+    }
+
+    /* For link animation on click*/
+
+    .nav-links li {
+        opacity: 0;
+    }
+    .nav-links > li > a {
+        font-size: 1.4rem;
+    }
+    .nav-links li:nth-child(1) {                           /* if you want to animate the links in the menu to fade in, selct the first child */
+        transition: all 0.5s ease 0.2s;                    /* transition all for .5 seconds with an ease with delay of 0.2 seconds*/
+    }
+    .nav-links li:nth-child(2) {                           /* if you want to animate the links in the menu to fade in, selct the second child */
+        transition: all 0.5s ease 0.35s;
+    }
+    .nav-links li:nth-child(3) {                           /* if you want to animate the links in the menu to fade in, selct the third child */
+        transition: all 0.5s ease 0.45s;
+    }
+    li.fade {
+        opacity: 1;
     }
 
 }
