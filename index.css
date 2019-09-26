@@ -16,10 +16,15 @@ nav {
 .nav-links {
     display: flex;                              /* display elements side by side */
     list-style: none;                           /* remove default stylization (i.e. bullet points*/
+    width: 50%;                                 /* make the wdith of nav-links 50% of the nav bar itself (i.e. XXXXXXXX--------*/
+    height: 100%;                               /* make it 100% of the nav-links box*/
+    align-items: center;                        /* position the links vertically in the center */
+    justify-content: space-around;               /* space all the links so they are evenly spaced in the nav-links box */
+    margin-left: auto;                          /* margin-left auto will position the links to the far RIGHT of the nav-links section*/
 
 } 
 
-.nav-links .link {                       /* For each link in the nav link*/
-    color: white;
-    text-decoration: none;
+.nav-links .link {                       /* For each link in the nav link... */
+    color: white;                      /* text is white...*/
+    text-decoration: none;               /* remove deafult style (i.e. underline)*/
 }
