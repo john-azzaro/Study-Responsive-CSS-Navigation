@@ -46,12 +46,32 @@ nav {
 
 @media screen and (max-width: 768px) {         /* media query when the screen is at or BELOW 768 px...*/
 
+    .line {                                      /* for the lines that make the hamburger icon...*/
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+
+    nav {
+        position: relative;                     /* since we want to place our burger menu on the far right we set position to relative...*/  
+    }
+
+    .hamburger {                               /* and because the nav has a realtive position, the hamburger can be moved freely...*/
+        position: absolute;                    /* outside normal document flow */
+        cursor: pointer;                       /* on hover, a pointer will show */
+        right: 5%;                             /* and positioned 5% from the right of the window */
+        top: 50%;                              /* to center burger icon, set 50% (i.e. mid) */   
+        transform: translate(-5%, -50%);       /* and transform translate with offset*/
+    }
+
     .nav-links {
         position: fixed;                        /* with position: fixed, element is relative to viewport and stays in the same place even on scroll*/
         background: rgb(36, 35, 35);          /* color (same as the nav bar) */
         height: 100vh;                          /* height is 100% if the viewport */
         width: 100%;                            /* width is 100% of the viewport */
         flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
+        display: none;
     }
 
 
