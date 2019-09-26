@@ -71,6 +71,9 @@ nav {
         height: 100vh;                          /* height is 100% if the viewport */
         width: 100%;                            /* width is 100% of the viewport */
         flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
+
+        clip-path: circle(100px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
+        -webkit-clip-path: circle(100px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
     }
 
 

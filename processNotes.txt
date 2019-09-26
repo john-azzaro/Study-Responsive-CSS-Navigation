@@ -107,3 +107,29 @@ Also, remember to remove the "display: none" from the nav-links in your media qu
     }
 
 -----------------------------------------------------------------
+
+STEP 7: Add animation:
+======================
+To add an animation, we have to use "clip-path" so that we can essentially block-in what we see. So first, you need to add the clip=path property
+to your element you want to animate, which in this case is the nav-links element.  The shape we use now is a circle, so add that in.
+------------------------
+clip-path: cirle();
+------------------------
+
+Next, you want to add the position you want the shape to be at with "at" with percentages 
+------------------------------
+
+                                position from top
+                                |
+clip-path: cirle(100px at 90% -10%);
+                           |  
+                           position from right
+
+------------------------------
+
+Also, because compatibility with the clip-path property might be lacking, add a webkit property as well.
+--------------------------------
+-webkit-clip-path: circle(100px at 90% -10%);
+--------------------------------
+
+
