@@ -46,6 +46,13 @@ nav {
 
 @media screen and (max-width: 768px) {         /* media query when the screen is at or BELOW 768 px...*/
 
+    .nav-links {
+        position: fixed;                        /* with position: fixed, element is relative to viewport and stays in the same place even on scroll*/
+        background: rgb(36, 35, 35);          /* color (same as the nav bar) */
+        height: 100vh;                          /* height is 100% if the viewport */
+        width: 100%;                            /* width is 100% of the viewport */
+        flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
+    }
 
-    
+
 }

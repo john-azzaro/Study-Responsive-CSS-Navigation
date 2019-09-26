@@ -36,6 +36,7 @@ STEP 2: Then add the links that you want for your navigation with an unordered l
 
 STEP 3: Add stylizations to the navigation
 ==========================================
+The styling below will be used for larger viewport sizes.
 -----------------------------------------------------
 
 nav {
@@ -60,3 +61,36 @@ nav {
 }
 
 -----------------------------------------------------
+
+STEP 4: Add media query for 768 px and below
+=============================================
+-------------------------------------------
+    @media screen and (max-width: 768px) {         /* media query when the screen is at or BELOW 768 px...*/
+    
+    }
+-------------------------------------------
+
+STEP 5: style the navigation menu for smaller screen
+=====================================================
+---------------------------------------------------------
+@media screen and (max-width: 768px) {          /* media query when the screen is at or BELOW 768 px...*/
+
+    .nav-links {
+        position: fixed;                        /* with position: fixed, element is relative to viewport and stays in the same place even on scroll*/
+        background: rgb(36, 35, 35);            /* color (same as the nav bar) */
+        height: 100vh;                          /* height is 100% if the viewport */
+        width: 100%;                            /* width is 100% of the viewport */
+        flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
+    }
+
+}
+---------------------------------------------------------
+
+STEP 6: style the burger icon
+=============================
+for this step, it would be useful to add a "display: none" so that you can see behind the nav-links stylization you just created.
+-----------------------------------------------------------------
+
+
+
+-----------------------------------------------------------------
