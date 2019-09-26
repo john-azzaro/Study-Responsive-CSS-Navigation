@@ -12,3 +12,14 @@ nav {
     height: 10vh;                             /* nav bar relative to the rest of the viewport (90vh)*/
     background: rgb(36, 35, 35);
 }
+
+.nav-links {
+    display: flex;                              /* display elements side by side */
+    list-style: none;                           /* remove default stylization (i.e. bullet points*/
+
+} 
+
+.nav-links .link {                       /* For each link in the nav link*/
+    color: white;
+    text-decoration: none;
+}
