@@ -7,3 +7,8 @@
     margin: 0;                                                 /* zero-out margin otherwise there will be a white margin on the sides of the window. */
     padding: 0;                                                /* zero-out padding otherwise there will be a white margin on the sides of the window. */
 }
+
+nav {
+    height: 10vh;                             /* nav bar relative to the rest of the viewport (90vh)*/
+    background: rgb(36, 35, 35);
+}
