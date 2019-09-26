@@ -71,7 +71,6 @@ nav {
         height: 100vh;                          /* height is 100% if the viewport */
         width: 100%;                            /* width is 100% of the viewport */
         flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
-        display: none;
     }
 
 

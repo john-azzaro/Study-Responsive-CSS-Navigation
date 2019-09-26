@@ -89,8 +89,21 @@ STEP 5: style the navigation menu for smaller screen
 STEP 6: style the burger icon
 =============================
 for this step, it would be useful to add a "display: none" so that you can see behind the nav-links stylization you just created.
+
+Then, remember to set nav to relative so that we can freely position the hamburger icon.
+Also, remember to remove the "display: none" from the nav-links in your media query to see the menu again.
 -----------------------------------------------------------------
+    nav {
+        position: relative;                     /* since we want to place our burger menu on the far right we set position to relative...*/  
+    }
 
+    .hamburger {                               /* and because the nav has a realtive position, the hamburger can be moved freely...*/
+        position: absolute;                    /* outside normal document flow */
+        cursor: pointer;                       /* on hover, a pointer will show */
+        right: 5%;                             /* and positioned 5% from the right of the window */
 
+        top: 50%;                              /* 1. to center burger icon, set 50% (i.e. mid) */   
+        transform: translate(-5%, -50%);       /* 2. and transform translate with offset*/
+    }
 
 -----------------------------------------------------------------
