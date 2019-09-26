@@ -77,5 +77,9 @@ nav {
         transition: all 1s ease-out;                           /* animation effect */
     }
 
+    .nav-links.open {
+        clip-path: circle(1000px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
+        -webkit-clip-path: circle(1000px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
+    }
 
 }
