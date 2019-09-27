@@ -64,11 +64,50 @@ For this menu in this study, we want to have the logo on the left, the links on 
 
     .nav-links .link {                      /* For each link in the nav link... */
         color: white;                       /* text is white...*/
-        text-decoration: none;              /* remove deafult style (i.e. underline)*/
+        text-decoration: none;              /* remove default style (i.e. underline)*/
     }
 
 ```
 
 ### STEP 3: Add a media query for smaller viewports
-Since this isnt mobile first, we are going to add a media query for smaller screens after our stylizations for large screens.  In the case of this media query, we want to trigger our burger menu at 768px or smaller, which would be ```@media screen and (max-width: 768px)```.
+Since this isnt mobile first, we are going to add a media query for smaller screens after our stylizations for large screens.  In the case of this media query, we want to trigger our burger menu at 768px or smaller, which would be ```@media screen and (max-width: 768px)```.  Inside this media query, we will add the desired responsiveness.
+
+First, create revised stylization for your nav links.  The objective here is have the menu (once toggled to "open"), show a black background with the links we already haved stacked in a column in the middle of the screen.
+
+```CSS
+    .nav-links {                            /* For nav-links inside our media query */
+        position: fixed;                    /* Set position fixed (stays in the same place even on scroll) */
+        background: rgb(36, 35, 35);        /* Color of menu background (same as the nav bar) */
+        height: 100vh;                      /* Height of menu is 100% of the viewport */
+        width: 100%;                        /* Width of menu is 100% of the viewport */
+        flex-direction: column;             /* Set column to dlex-direction to stack links on top of each other*/
+        ...
+        ...
+        ...
+    }
+```
+
+### STEP 4: Add "clip-path" property for animation
+First, what is clip-path? Clip-path is css property that lets you specify a specific region of an element to display rather than the complete area.  In the case of this study, we are going to use a circle to block-in the menu background.  So in the .nav-links selector, add the relevant properties.  However, remember that clip-path is not fully supported on all browsers, so to be safe, also add a -webkit property with the same settings.
+```CSS
+        ...
+        ...
+        ...
+        clip-path: circle(100px at 90% -40%);              /* Clip-path circle (starts at the top right) */
+        -webkit-clip-path: circle(100px at 90% -10%);      /* To ensure compatibility, add a webkit */
+        transition: all 1s ease-out;                       /* Add transition effect for reveal */
+```
+
+### STEP 5: Add "open" class for JavaScript
+On click of the burger icon, we want to expand the menu with our links.  In order to do this, we need to add some JavaScript.  But first, we know that in order to toggle the class to see the menu, we need to first add the class to our CSS.  
+```CSS
+    .nav-links.open {
+        clip-path: circle(1400px at 90% -10%);              /* Clip-path circle expanded (starts at the top right) */
+        -webkit-clip-path: circle(1400px at 90% -10%);      /* And to ensure compatibility, add a webkit */   
+        pointer-events: all;                                /* Add for clickability */
+    }
+```
+
+### STEP 6: Add your JavaScript
+
 
