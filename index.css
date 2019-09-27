@@ -15,6 +15,17 @@ body {
 nav {
     height: 10vh;                             /* nav bar relative to the rest of the viewport (90vh)*/
     background: rgb(36, 35, 35);
+    display: flex;                            /* add display flex for logo*/
+}
+
+.brand-logo {                                                                /* section of header that holds the logo and brand name elements. */
+    display: flex;                                                                /* ... setting display to flex will put the elements (logo and brand name) next to each other...*/
+    align-items: center;                                                          /* ... text will line up in the center of the logo... */
+    font-size: 1.25em;                                                            /* ... font size of brand name will be larger... */
+    color: inherit;                                                               /* ... color will inherit from the parent (i.e. body) the color white.. */
+    text-decoration: none;                                                        /* ... remove underline from brand name (since it is a link to the home page). */
+    margin-left: 5%;
+    color: white;
 }
 
 .nav-links {
@@ -75,7 +86,7 @@ nav {
         flex-direction: column;                 /* let the flex direction be stacked on top of each other*/
         pointer-events: none;                    /* fo clickability */
 
-        clip-path: circle(100px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
+        clip-path: circle(100px at 90% -40%);              /* add the clip-path property with a circle that starts at the top right*/
         -webkit-clip-path: circle(100px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
         transition: all 1s ease-out;                           /* animation effect */
     }
@@ -83,8 +94,8 @@ nav {
 
     /* on click of the burger icon*/
     .nav-links.open {
-        clip-path: circle(1200px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
-        -webkit-clip-path: circle(1200px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
+        clip-path: circle(1400px at 90% -10%);              /* add the clip-path property with a circle that starts at the top right*/
+        -webkit-clip-path: circle(1400px at 90% -10%);      /* and to ensure compatibility, add a webkit*/   
         pointer-events: all;                                /* for clickability */
     }
 
