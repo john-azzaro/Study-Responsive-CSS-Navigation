@@ -12,5 +12,25 @@ Here's some questions covered in the study:
 <br>
 
 ## How do you create a responsive menu?
-To create a responsive menu, you first need to create a semantic ```nav``` element.  Inside this nav element, you need can 
+
+### STEP 1: Create your nav menu
+To create a responsive menu, you first need to create a semantic ```nav``` element.  Inside this nav element, you need can put your desired elements.  In our example, we have brand, links, and burger menu elements.
+```HTML
+    <nav>
+        <a href="/" class="brand-logo">                             <== brand element                         
+            <img class="logo-resize" src="" alt="">
+            <div class="brand-logo-name">CSS Nav Study</div>
+        </a>
+        <div class="hamburger">                                     <== hamburger element
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div> 
+        <ul class="nav-links">                                      <== links element
+            <li><a class="link" href="#">Discover</a></li>
+            <li><a class="link" href="#">Services</a></li>
+            <li><a class="link" href="#">Contact</a></li>
+        </ul>
+    </nav>
+```
 
