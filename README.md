@@ -90,24 +90,53 @@ First, create revised stylization for your nav links.  The objective here is hav
 ### STEP 4: Add "clip-path" property for animation
 First, what is clip-path? Clip-path is css property that lets you specify a specific region of an element to display rather than the complete area.  In the case of this study, we are going to use a circle to block-in the menu background.  So in the .nav-links selector, add the relevant properties.  However, remember that clip-path is not fully supported on all browsers, so to be safe, also add a -webkit property with the same settings.
 ```CSS
+    .nav-links { 
         ...
         ...
         ...
-        clip-path: circle(100px at 90% -40%);              /* Clip-path circle (starts at the top right) */
+        clip-path: circle(100px at 90% -40%);              /* Clip-path circle (starts top right) */
         -webkit-clip-path: circle(100px at 90% -10%);      /* To ensure compatibility, add a webkit */
         transition: all 1s ease-out;                       /* Add transition effect for reveal */
+    }
 ```
 
 ### STEP 5: Add "open" class for JavaScript
 On click of the burger icon, we want to expand the menu with our links.  In order to do this, we need to add some JavaScript.  But first, we know that in order to toggle the class to see the menu, we need to first add the class to our CSS.  
 ```CSS
     .nav-links.open {
-        clip-path: circle(1400px at 90% -10%);              /* Clip-path circle expanded (starts at the top right) */
-        -webkit-clip-path: circle(1400px at 90% -10%);      /* And to ensure compatibility, add a webkit */   
-        pointer-events: all;                                /* Add for clickability */
+        clip-path: circle(1400px at 90% -10%);            /* Clip-path circle expanded (starts top right) */
+        -webkit-clip-path: circle(1400px at 90% -10%);    /* And to ensure compatibility, add a webkit */   
+        pointer-events: all;                              /* Add for clickability */
     }
 ```
 
 ### STEP 6: Add your JavaScript
+Our JS here is pretty straight forward.  We intialize the app, setup event listeners (in this case we just have the one but its good practice to future proof everything you do), add "burger click" to your event listeners, and add the logic for your burgerClick function.  
+
+The burgerClick function essentially adds an event listener which, upon the user clicking the burger icon (e.g. hamburger), will toggle the nav-links to the ``` .nav-links.open ``` class. 
+```JavaScipt
+function burgerClick() {
+    const hamburger = document.querySelector('.hamburger');         // selects hamburger icon.
+    const navLinks = document.querySelector('.nav-links');          // selects nav-links element
+    const links = document.querySelectorAll(".nav-links li");       // selects all the li's in nav-links
+
+    hamburger.addEventListener("click", function(event) {            // on click of the hamburger icon...
+        navLinks.classList.toggle('open');                           // toggle the "open" style
+    });
+}
+
+function setupEventHandlers() {
+    burgerClick();
+}
+
+function initialize() {
+    setupEventHandlers();
+}
+
+$(initialize);
+```
+
+### STEP 7: Add additional animation effects
+To add additional animation effects, such as fade reveal of the links, add the classes to CSS and logic to your ``` burgerClick``` function.  For more details, see the CSS file or the ProcessNotes for detailed information.
 
 
