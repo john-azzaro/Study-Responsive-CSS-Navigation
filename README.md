@@ -9,6 +9,8 @@ Here's some questions covered in the study:
 
 * [How do you create a conventional menu?](#How-do-you-create-a-conventional-menu)
 * [How do you create a responsive menu?](#How-do-you-create-a-responsive-menu)
+* [Does Responsive CSS Navigation Study feature commentary?](#Does-Responsive-CSS-Navigation-Study-feature-commentary)
+* [What are the key features of Responsive CSS Navigation Study?](#What-are-the-key-features-of-Responsive-CSS-Navigation-Study)
 * [Screenshots](#Screenshots)
 
 <br>
@@ -147,7 +149,7 @@ To add additional animation effects, such as fade reveal of the links, add the c
 
 <br>
 
-## Does Responsive CSS Navigation Study feature commentary
+## Does Responsive CSS Navigation Study feature commentary?
 Yes! I use extensive commentary so that the new and curious can follow the logic in the program and get an idea of my reasoning behind each and every line of code.  See CSS and JavaScript files for documented comments.  Also, I also provide a Process text file that gives a good outline of my design and implementation process. 
 
 <br>
