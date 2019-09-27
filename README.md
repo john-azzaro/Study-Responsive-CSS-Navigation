@@ -8,7 +8,8 @@ The Responsive CSS Navigation Study is a demonstration of a basic CSS responsive
 Here's some questions covered in the study:
 
 * [How do you create a conventional menu?](#How-do-you-create-a-conventional-menu)
-* [## How do you create a responsive menu?](#How-do-you-create-a-responsive-menu)
+* [How do you create a responsive menu?](#How-do-you-create-a-responsive-menu)
+* [Screenshots](#Screenshots)
 
 <br>
 
@@ -144,4 +145,25 @@ $(initialize);
 ### STEP 7: Add additional animation effects
 To add additional animation effects, such as fade reveal of the links, add the classes to CSS and logic to your ``` burgerClick``` function.  For more details, see the CSS file or the ProcessNotes for detailed information.
 
+<br>
 
+## Does Responsive CSS Navigation Study feature commentary
+Yes! I use extensive commentary so that the new and curious can follow the logic in the program and get an idea of my reasoning behind each and every line of code.  See CSS and JavaScript files for documented comments.  Also, I also provide a Process text file that gives a good outline of my design and implementation process. 
+
+<br>
+
+## What are the key features of Responsive CSS Navigation Study?
+Since this study is ongoing, basic functionalities are covered first and more advanced features are added or will be added in the future:
+
+
+| **Features:**                            | **Feature Notes:**                             |
+| ---------------------------------------- | ----------------------------------------------|
+| conventional navigation                  |   semantic navigation with brand and links               |
+| responsive navigation                    |   media query with animated transition menu               |
+
+
+## Screenshots
+![rm1](https://user-images.githubusercontent.com/37447586/65742193-ff5bad00-e0a3-11e9-8cc3-8dad9de6f49a.png)
+![rm2](https://user-images.githubusercontent.com/37447586/65742195-ff5bad00-e0a3-11e9-9bc4-7d3d415ebe2f.png)
+![rm3](https://user-images.githubusercontent.com/37447586/65742196-fff44380-e0a3-11e9-823c-3f57efd54943.png)
+![rm4](https://user-images.githubusercontent.com/37447586/65742197-fff44380-e0a3-11e9-9f47-d91e67388bbf.png)
