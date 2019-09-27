@@ -34,3 +34,38 @@ To create a responsive menu, you first need to create a semantic ```nav``` eleme
     </nav>
 ```
 
+### STEP 2: Create the CSS for your menu
+For this menu in this study, we want to have the logo on the left, the links on the right.
+```CSS
+    nav {                                   /* For the ENITRE nav bar */
+        height: 10vh;                       /* Nav bar relative to the rest of the viewport (90vh) */
+        background: rgb(36, 35, 35);        /* Color of the nav bar (e.g. black) */
+        display: flex;                      /* Display flex for logo position relative to links */
+    }
+
+    .brand-logo {                           /* For logo and brand name elements. */
+        display: flex;                      /* Display flex so elements are side by side */
+        align-items: center;                /* Logo centered */
+        font-size: 1.25em;                  /* Font size of brand name will be larger */
+        text-decoration: none;              /* Remove default stylizations (i.e. underline, etc.) */
+        margin-left: 5%;                    /* Leave 5% margin left of the brand and logo */
+        color: white;                       /* Font color white */
+    }
+
+    .nav-links {                            /* For the nav links (i.e. discover, etc.) */
+        display: flex;                      /* Display elements side by side */
+        list-style: none;                   /* Remove default list stylization (i.e. bullet points) */
+        width: 40%;                         /* Set width of nav-links 50% of nav bar (i.e. XXXXXXXX--------*/
+        height: 100%;                       /* Make it 100% of the nav-links box*/
+        align-items: center;                /* Position the links vertically in the center */
+        justify-content: space-around;      /* Space all the links evenly in the nav-links box */
+        margin-left: auto;                  /* Position the links to the far RIGHT of the nav-links section */
+    } 
+
+    .nav-links .link {                      /* For each link in the nav link... */
+        color: white;                       /* text is white...*/
+        text-decoration: none;              /* remove deafult style (i.e. underline)*/
+    }
+
+```
+
