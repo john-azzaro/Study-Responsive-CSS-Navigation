@@ -69,3 +69,6 @@ For this menu in this study, we want to have the logo on the left, the links on 
 
 ```
 
+### STEP 3: Add a media query for smaller viewports
+Since this isnt mobile first, we are going to add a media query for smaller screens after our stylizations for large screens.  In the case of this media query, we want to trigger our burger menu at 768px or smaller, which would be ```@media screen and (max-width: 768px)```.
+
