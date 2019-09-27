@@ -1,5 +1,5 @@
 # Responsive CSS Navigation Study
-See it Live: 
+See it Live: https://john-azzaro.github.io/Study-Responsive-CSS-Navigation/
 <br>
 
 ## What is the Responsive CSS Navigation Study
@@ -114,14 +114,14 @@ On click of the burger icon, we want to expand the menu with our links.  In orde
 Our JS here is pretty straight forward.  We intialize the app, setup event listeners (in this case we just have the one but its good practice to future proof everything you do), add "burger click" to your event listeners, and add the logic for your burgerClick function.  
 
 The burgerClick function essentially adds an event listener which, upon the user clicking the burger icon (e.g. hamburger), will toggle the nav-links to the ``` .nav-links.open ``` class. 
-```JavaScipt
+```JavaScript
 function burgerClick() {
-    const hamburger = document.querySelector('.hamburger');         // selects hamburger icon.
-    const navLinks = document.querySelector('.nav-links');          // selects nav-links element
-    const links = document.querySelectorAll(".nav-links li");       // selects all the li's in nav-links
+    const hamburger = document.querySelector('.hamburger');           // Selects hamburger icon.
+    const navLinks = document.querySelector('.nav-links');            // Selects nav-links element
+    const links = document.querySelectorAll(".nav-links li");         // Selects all the li's in nav-links
 
-    hamburger.addEventListener("click", function(event) {            // on click of the hamburger icon...
-        navLinks.classList.toggle('open');                           // toggle the "open" style
+    hamburger.addEventListener("click", function(event) {             // On click of the hamburger icon...
+        navLinks.classList.toggle('open');                            // ...toggle the "open" style.
     });
 }
 
