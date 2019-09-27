@@ -7,11 +7,12 @@ The Responsive CSS Navigation Study is a demonstration of a basic CSS responsive
 
 Here's some questions covered in the study:
 
-* [How do you create a responsive menu?](#How-do-you-create-a-responsive-menu)
+* [How do you create a conventional menu?](#How-do-you-create-a-conventional-menu)
+* [## How do you create a responsive menu?](#How-do-you-create-a-responsive-menu)
 
 <br>
 
-## How do you create a responsive menu?
+## How do you create a conventional menu?
 
 ### STEP 1: Create your nav menu
 To create a responsive menu, you first need to create a semantic ```nav``` element.  Inside this nav element, you need can put your desired elements.  In our example, we have brand, links, and burger menu elements.
@@ -68,6 +69,10 @@ For this menu in this study, we want to have the logo on the left, the links on 
     }
 
 ```
+
+<br>
+
+## How do you create a responsive menu?
 
 ### STEP 3: Add a media query for smaller viewports
 Since this isnt mobile first, we are going to add a media query for smaller screens after our stylizations for large screens.  In the case of this media query, we want to trigger our burger menu at 768px or smaller, which would be ```@media screen and (max-width: 768px)```.  Inside this media query, we will add the desired responsiveness.
